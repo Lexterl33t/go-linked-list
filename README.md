@@ -1,5 +1,5 @@
 # go-linked-list
-little library to use linked list
+little library to use double circular linked list
 
 ## Installation
 ```sh
