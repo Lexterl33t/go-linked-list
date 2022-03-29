@@ -60,3 +60,38 @@ import "github.com/Lexterl33t/go-linked-list"
 ```go
 list := linked.NewList(1337)
 ```
+
+## Insert on the list
+
+```go
+list.Append(12)
+```
+
+## Get chunk by index
+
+```go
+
+list := linked.NewList("Bryton")
+list.Append("Lol")
+list.Append("haha")
+res, err := list.Get(1) // list.Get(-1) get the last element of linked list nd list.Get(-2) return haha the negative number index working
+if err != nil {
+  fmt.Println(err)
+}
+
+fmt.Println(res) // => lol
+```
+
+## Remove last element of linked list
+
+```go
+
+list.Pop()
+```
+
+## Remove chunk by index
+
+```go
+
+list.Delete(1)
+```
